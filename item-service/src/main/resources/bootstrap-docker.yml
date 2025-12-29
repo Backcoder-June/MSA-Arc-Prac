@@ -5,6 +5,19 @@ spring:
     name: item-service
   profiles:
     active: docker
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://mariadb:3306/msa
+    username: root
+    password: 3123
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDBDialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
   cloud:
     config:
       uri: http://config-server:8080
