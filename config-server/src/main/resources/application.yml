@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///C:/APIMSAPROJECT/APIService/config-server/src/main/resources/config
+        encrypt:
+          enabled: false
+server:
+  port: 8080

@@ -1,0 +1,29 @@
+logging:
+  file:
+    name: logs/api-eureka.log
+    max-size: 500MB
+    max-history: 10
+  level:
+    root: info
+    org.msa.item: debug
+
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: eureka-server
+  client:
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#      defaultZone: http://eureka-server:8761/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

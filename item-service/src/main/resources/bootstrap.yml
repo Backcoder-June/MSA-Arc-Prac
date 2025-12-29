@@ -1,0 +1,19 @@
+server:
+  port: 0
+spring:
+  application:
+    name: item-service
+  profiles:
+    active: test
+  cloud:
+    config:
+      uri: http://localhost:8080
+    loadbalancer:
+      ribbon:
+        enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans

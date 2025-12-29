@@ -1,0 +1,105 @@
+2025-12-02T13:15:25.846+09:00  INFO 17556 --- [item-service] [restartedMain] org.msa.item.ItemServiceApplication      : The following 1 profile is active: "test"
+2025-12-02T13:15:26.424+09:00  INFO 17556 --- [item-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-02T13:15:26.454+09:00  INFO 17556 --- [item-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2025-12-02T13:15:26.572+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=96f1a321-fcb3-373d-a896-d815bceba94b
+2025-12-02T13:15:27.099+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5000 (http)
+2025-12-02T13:15:27.109+09:00  INFO 17556 --- [item-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-02T13:15:27.110+09:00  INFO 17556 --- [item-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-02T13:15:27.148+09:00  INFO 17556 --- [item-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-02T13:15:27.148+09:00  INFO 17556 --- [item-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1292 ms
+2025-12-02T13:15:27.381+09:00  INFO 17556 --- [item-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-02T13:15:27.422+09:00  INFO 17556 --- [item-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-02T13:15:27.446+09:00  INFO 17556 --- [item-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-02T13:15:27.670+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-02T13:15:27.692+09:00  INFO 17556 --- [item-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-02T13:15:27.753+09:00  INFO 17556 --- [item-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@70069a12
+2025-12-02T13:15:27.755+09:00  INFO 17556 --- [item-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-02T13:15:27.773+09:00  WARN 17556 --- [item-service] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 8.4.7 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2025-12-02T13:15:27.776+09:00  WARN 17556 --- [item-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-02T13:15:28.371+09:00  INFO 17556 --- [item-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-02T13:15:28.455+09:00  INFO 17556 --- [item-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-02T13:15:28.737+09:00  WARN 17556 --- [item-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-02T13:15:29.327+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-02T13:15:29.364+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-12-02T13:15:29.444+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5000 (http) with context path '/'
+2025-12-02T13:15:29.465+09:00  INFO 17556 --- [item-service] [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 4.535 seconds (process running for 5.035)
+2025-12-02T13:15:29.627+09:00  INFO 17556 --- [item-service] [RMI TCP Connection(4)-192.168.0.23] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-02T13:15:29.627+09:00  INFO 17556 --- [item-service] [RMI TCP Connection(4)-192.168.0.23] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-02T13:15:29.637+09:00  INFO 17556 --- [item-service] [RMI TCP Connection(4)-192.168.0.23] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2025-12-02T13:15:43.732+09:00 DEBUG 17556 --- [item-service] [http-nio-5000-exec-4] org.msa.item.controller.ItemController   : path vari item type = C
+2025-12-02T13:15:43.733+09:00 DEBUG 17556 --- [item-service] [http-nio-5000-exec-4] org.msa.item.controller.ItemController   : request add item id = tester15
+2025-12-02T13:16:27.656+09:00 DEBUG 17556 --- [item-service] [http-nio-5000-exec-3] org.msa.item.controller.ItemController   : path vari item type = C
+2025-12-02T13:16:27.656+09:00 DEBUG 17556 --- [item-service] [http-nio-5000-exec-3] org.msa.item.controller.ItemController   : request add item id = tester15
+2025-12-02T13:16:38.772+09:00  INFO 17556 --- [item-service] [http-nio-5000-exec-2] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-02T13:16:38.803+09:00  INFO 17556 --- [item-service] [http-nio-5000-exec-2] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8080
+2025-12-02T13:16:38.837+09:00  INFO 17556 --- [item-service] [http-nio-5000-exec-2] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=item-service, profiles=[test], label=null, version=null, state=null
+2025-12-02T13:16:38.837+09:00  INFO 17556 --- [item-service] [http-nio-5000-exec-2] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-classpath:/config/item-service-test.yml'}, BootstrapPropertySource {name='bootstrapProperties-classpath:/config/item-service.yml'}]
+2025-12-02T13:16:38.847+09:00  INFO 17556 --- [item-service] [http-nio-5000-exec-2] o.s.boot.SpringApplication               : The following 1 profile is active: "test"
+2025-12-02T13:16:38.850+09:00  INFO 17556 --- [item-service] [http-nio-5000-exec-2] o.s.boot.SpringApplication               : Started application in 0.118 seconds (process running for 74.42)
+2025-12-02T13:16:38.948+09:00  INFO 17556 --- [item-service] [http-nio-5000-exec-2] o.s.cloud.endpoint.RefreshEndpoint       : Refreshed keys : []
+2025-12-02T13:17:05.568+09:00 DEBUG 17556 --- [item-service] [http-nio-5000-exec-5] org.msa.item.controller.ItemController   : path vari item type = C
+2025-12-02T13:17:05.568+09:00 DEBUG 17556 --- [item-service] [http-nio-5000-exec-5] org.msa.item.controller.ItemController   : request add item id = tester77
+2025-12-02T13:21:40.029+09:00  INFO 17556 --- [item-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-02T13:21:40.049+09:00  INFO 17556 --- [item-service] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-02T13:21:40.051+09:00  INFO 17556 --- [item-service] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-02T13:21:40.057+09:00  INFO 17556 --- [item-service] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-02T13:21:40.058+09:00  INFO 17556 --- [item-service] [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-12-02T13:21:40.059+09:00  INFO 17556 --- [item-service] [Thread-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-12-02T13:21:40.268+09:00  INFO 17556 --- [item-service] [restartedMain] org.msa.item.ItemServiceApplication      : The following 1 profile is active: "test"
+2025-12-02T13:21:40.619+09:00  INFO 17556 --- [item-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-02T13:21:40.627+09:00  INFO 17556 --- [item-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-12-02T13:21:40.665+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=96f1a321-fcb3-373d-a896-d815bceba94b
+2025-12-02T13:21:40.759+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5000 (http)
+2025-12-02T13:21:40.760+09:00  INFO 17556 --- [item-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-02T13:21:40.760+09:00  INFO 17556 --- [item-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-02T13:21:40.786+09:00  INFO 17556 --- [item-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-02T13:21:40.786+09:00  INFO 17556 --- [item-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 515 ms
+2025-12-02T13:21:40.879+09:00  INFO 17556 --- [item-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-02T13:21:40.882+09:00  INFO 17556 --- [item-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-02T13:21:40.889+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-02T13:21:40.889+09:00  INFO 17556 --- [item-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-12-02T13:21:40.894+09:00  INFO 17556 --- [item-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@268cd6e4
+2025-12-02T13:21:40.894+09:00  INFO 17556 --- [item-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-12-02T13:21:40.895+09:00  WARN 17556 --- [item-service] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 8.4.7 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2025-12-02T13:21:40.895+09:00  WARN 17556 --- [item-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-02T13:21:40.924+09:00  INFO 17556 --- [item-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-02T13:21:40.986+09:00  INFO 17556 --- [item-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-02T13:21:41.097+09:00  WARN 17556 --- [item-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-02T13:21:41.445+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-02T13:21:41.474+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-02T13:21:41.503+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5000 (http) with context path '/'
+2025-12-02T13:21:41.516+09:00  INFO 17556 --- [item-service] [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 1.385 seconds (process running for 377.086)
+2025-12-02T13:21:41.518+09:00  INFO 17556 --- [item-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-02T13:22:10.366+09:00  INFO 17556 --- [item-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-02T13:22:10.380+09:00  INFO 17556 --- [item-service] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-02T13:22:10.381+09:00  INFO 17556 --- [item-service] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-12-02T13:22:10.384+09:00  INFO 17556 --- [item-service] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-12-02T13:22:10.384+09:00  INFO 17556 --- [item-service] [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-12-02T13:22:10.572+09:00  INFO 17556 --- [item-service] [restartedMain] org.msa.item.ItemServiceApplication      : The following 1 profile is active: "test"
+2025-12-02T13:22:10.883+09:00  INFO 17556 --- [item-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-02T13:22:10.892+09:00  INFO 17556 --- [item-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-12-02T13:22:10.934+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=96f1a321-fcb3-373d-a896-d815bceba94b
+2025-12-02T13:22:11.029+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5000 (http)
+2025-12-02T13:22:11.030+09:00  INFO 17556 --- [item-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-02T13:22:11.030+09:00  INFO 17556 --- [item-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-02T13:22:11.048+09:00  INFO 17556 --- [item-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-02T13:22:11.049+09:00  INFO 17556 --- [item-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 476 ms
+2025-12-02T13:22:11.137+09:00  INFO 17556 --- [item-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-02T13:22:11.139+09:00  INFO 17556 --- [item-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-02T13:22:11.146+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-02T13:22:11.147+09:00  INFO 17556 --- [item-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-12-02T13:22:11.151+09:00  INFO 17556 --- [item-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@4a667b1c
+2025-12-02T13:22:11.151+09:00  INFO 17556 --- [item-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-12-02T13:22:11.152+09:00  WARN 17556 --- [item-service] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 8.4.7 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2025-12-02T13:22:11.152+09:00  WARN 17556 --- [item-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-02T13:22:11.181+09:00  INFO 17556 --- [item-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-02T13:22:11.237+09:00  INFO 17556 --- [item-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-02T13:22:11.345+09:00  WARN 17556 --- [item-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-02T13:22:11.656+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-02T13:22:11.682+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-12-02T13:22:11.711+09:00  INFO 17556 --- [item-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5000 (http) with context path '/'
+2025-12-02T13:22:11.722+09:00  INFO 17556 --- [item-service] [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 1.29 seconds (process running for 407.292)
+2025-12-02T13:22:11.724+09:00  INFO 17556 --- [item-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-02T13:31:32.960+09:00  INFO 17556 --- [item-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-02T13:31:32.961+09:00  INFO 17556 --- [item-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-12-02T13:31:32.966+09:00  INFO 17556 --- [item-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
