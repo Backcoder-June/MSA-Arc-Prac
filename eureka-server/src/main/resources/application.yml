@@ -1,14 +1,17 @@
 spring:
+  config:
+    activate:
+      on-profile: "docker"
+    import: "optional:configserver:"
   application:
     name: eureka-server
-  profiles:
-    active: docker
   cloud:
     config:
+      enabled: true
       uri: http://config-server:8080
-    loadbalancer:
-      ribbon:
-        enabled: false
+      request-read-timeout: 1000
+      request-connect-timeout: 100
+
 eureka:
   client:
     register-with-eureka: false

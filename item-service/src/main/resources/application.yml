@@ -1,10 +1,17 @@
 server:
   port: 0
 spring:
+  config:
+    activate:
+      on-profile: "docker"
+    import: "optional:configserver:"
   application:
     name: item-service
-  profiles:
-    active: docker
+  cloud:
+    config:
+      uri: http://config-server:8080
+      request-read-timeout: 1000
+      request-connect-timeout: 100
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://mariadb:3306/msa
@@ -18,12 +25,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
-  cloud:
-    config:
-      uri: http://config-server:8080
-    loadbalancer:
-      ribbon:
-        enabled: false
+
 eureka:
   client:
     service-url:
