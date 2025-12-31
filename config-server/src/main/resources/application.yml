@@ -12,3 +12,6 @@ spring:
           enabled: false
 server:
   port: 8080
+
+encrypt:
+  key: SECU200
