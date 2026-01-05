@@ -6,6 +6,9 @@ logging:
   level:
     root: info
     org.msa.gatewayserver: debug
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.cloud.gateway.handler.RoutePredicateHandlerMapping: DEBUG
+    org.springframework.cloud.gateway.route: DEBUG
 
 spring:
   config:
@@ -13,15 +16,18 @@ spring:
       - classpath:/config/datasource-docker.yml
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-        - id: item-service
-          uri: lb://item-service
-          predicates:
-            - Path=/vi/item/**
-
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: false
+          routes:
+            - id: ITEM-SERVICE
+              uri: lb://ITEM-SERVICE
+              predicates:
+                - Path=/vi/item/**
+              filters:
+                - RewritePath=/vi/item/(?<segment>.*), /vi/item/${segment}
 eureka:
   instance:
     prefer-ip-address: true

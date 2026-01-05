@@ -26,6 +26,8 @@ public class ItemController {
     public ResponseEntity<ResponseDTO> add(@RequestBody @Valid ItemDTO itemDTO, @ItemTypeValid @PathVariable String itemType) throws Exception{
         ResponseDTO.ResponseDTOBuilder responseBuilder = ResponseDTO.builder();
 
+        log.info(">>>>>>>>>>>>>>>>>>>>>>>>>ITEM CONTROLLER!!!!");
+
         log.debug("path vari item type = {}",  itemType);
         log.debug("request add item id = {}",  itemDTO.getId());
 

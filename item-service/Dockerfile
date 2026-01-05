@@ -11,5 +11,5 @@ RUN ./gradlew bootJAR
 FROM eclipse-temurin:25-jdk-alpine
 WORKDIR /app
 COPY --from=builder build/libs/*.jar /app/app.jar
-EXPOSE 0
+EXPOSE 28080
 ENTRYPOINT ["java", "-jar", "app.jar"]

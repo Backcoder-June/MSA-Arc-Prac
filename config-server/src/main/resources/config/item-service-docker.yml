@@ -11,7 +11,6 @@ spring:
   config:
     import:
       - classpath:/config/datasource-docker.yml
-
 token:
   expiration_time: 86400000
   secret: SECU200
