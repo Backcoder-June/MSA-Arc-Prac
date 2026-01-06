@@ -8,32 +8,8 @@ spring:
   application:
     name: gateway-server
   cloud:
-    gateway:
-      server:
-        webflux:
-          discovery:
-            locator:
-              enabled: false
-          routes:
-            - id: ITEM-SERVICE
-              uri: lb://ITEM-SERVICE
-              predicates:
-                - Path=/vi/item/**
-              filters:
-                - RewritePath=/vi/item/(?<segment>.*), /vi/item/${segment}
     config:
       enabled: true
       uri: http://config-server:8080
       request-read-timeout: 1000
       request-connect-timeout: 100
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-server:8761/eureka
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh, health, beans

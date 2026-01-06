@@ -1,6 +1,6 @@
 logging:
   file:
-    name: logs/api-test-react7.log
+    name: logs/item-service.log
     max-size: 500MB
     max-history: 10
   level:
@@ -8,9 +8,20 @@ logging:
     org.msa.item: debug
 
 spring:
-  config:
-    import:
-      - classpath:/config/datasource-docker.yml
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://mariadb:3306/msa
+    username: root
+    password: '{cipher}49b3b67ad96c988bea0833e44b77446cf76b397311a98071f9727e5205f2ba5e'
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDBDialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
 token:
   expiration_time: 86400000
   secret: SECU200
@@ -24,3 +35,9 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://eureka-server:8761/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans

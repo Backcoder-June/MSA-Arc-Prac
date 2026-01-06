@@ -16,18 +16,16 @@ spring:
       - classpath:/config/datasource-docker.yml
   cloud:
     gateway:
-      server:
-        webflux:
-          discovery:
-            locator:
-              enabled: false
-          routes:
-            - id: ITEM-SERVICE
-              uri: lb://ITEM-SERVICE
-              predicates:
-                - Path=/vi/item/**
-              filters:
-                - RewritePath=/vi/item/(?<segment>.*), /vi/item/${segment}
+      discovery:
+        locator:
+          enabled: false
+      routes:
+        - id: ITEM-SERVICE
+          uri: lb://ITEM-SERVICE
+          predicates:
+            - Path=/vi/item/**
+          filters:
+            - RewritePath=/vi/item/(?<segment>.*), /vi/item/${segment}
 eureka:
   instance:
     prefer-ip-address: true
@@ -36,3 +34,9 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://eureka-server:8761/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans

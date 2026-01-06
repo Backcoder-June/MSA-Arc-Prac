@@ -13,22 +13,3 @@ spring:
       uri: http://config-server:8080
       request-read-timeout: 1000
       request-connect-timeout: 100
-
-  datasource:
-    driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://mariadb:3306/msa
-    username: root
-    password: 3123
-  jpa:
-    database-platform: org.hibernate.dialect.MariaDBDialect
-    hibernate:
-      ddl-auto: create
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-server:8761/eureka
