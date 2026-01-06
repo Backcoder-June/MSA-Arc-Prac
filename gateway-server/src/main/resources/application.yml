@@ -14,13 +14,3 @@ spring:
       request-read-timeout: 1000
       request-connect-timeout: 100
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-server:8761/eureka
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh, health, beans

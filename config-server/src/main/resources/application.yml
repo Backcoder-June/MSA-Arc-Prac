@@ -7,9 +7,9 @@ spring:
     config:
       server:
         native:
-          search-locations: file:///C:/APIMSAPROJECT/APIService/config-server/src/main/resources/config
+          search-locations: file:/app/config/
         encrypt:
-          enabled: false
+          enabled: true
 server:
   port: 8080
 

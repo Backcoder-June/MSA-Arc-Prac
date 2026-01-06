@@ -38,10 +38,11 @@ public class TokenCheckFilter implements WebFilter {
 
         log.info("filtered token = {}", token);
 
-        if(!success){
+        if(tmep == null || tmep2 == null){
             return errorResponse(exchange);
-
         }
+
+        log.info("FORWARD PATH = {}", exchange.getRequest().getURI().getPath());
 
         return chain.filter(exchange);
     }
