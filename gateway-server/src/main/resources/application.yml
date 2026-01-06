@@ -13,3 +13,4 @@ spring:
       uri: http://config-server:8080
       request-read-timeout: 1000
       request-connect-timeout: 100
+

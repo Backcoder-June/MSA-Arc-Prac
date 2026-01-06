@@ -11,21 +11,33 @@ logging:
     org.springframework.cloud.gateway.route: DEBUG
 
 spring:
-  config:
-    import:
-      - classpath:/config/datasource-docker.yml
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://mariadb:3306/msa
+    username: root
+    password: '{cipher}49b3b67ad96c988bea0833e44b77446cf76b397311a98071f9727e5205f2ba5e'
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDBDialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: false
-      routes:
-        - id: ITEM-SERVICE
-          uri: lb://ITEM-SERVICE
-          predicates:
-            - Path=/vi/item/**
-          filters:
-            - RewritePath=/vi/item/(?<segment>.*), /vi/item/${segment}
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: false
+          routes:
+            - id: ITEM-SERVICE
+              uri: lb://ITEM-SERVICE
+              predicates:
+                - Path=/vi/item/**
+
+
 eureka:
   instance:
     prefer-ip-address: true
